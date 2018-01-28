@@ -1,0 +1,72 @@
+<h1> simple HTML editing script</h1>
+<h2> Intro</h2>
+<p>
+well, since I started woking on this page, I noticed that writing HTML tags pisses me off<br>
+It's annoying. Since I don't like to be annoyed I figured I will write a small script to ease writing HTML code.<br>
+</p>
+<p>
+obviouslly, I am not going to write a hugh program to actually handle the entire language restrictions. there are enough IDE to handle writing and managing HTML code.<br>
+No, I just want to be able to write the textual parts of the page easily, so I don't need to hang on writing all the tags when writing.<br>
+</p>
+<h2> the script</h2>
+<p>
+<h3> definitions</h3>
+As a starting point i decided to support easy writing of just a few textual tags<br>
+i.e. p, h1, h2, h3, ul and li.<br>
+The idea is being able to write naturally as possible and letting the script parse the text file and create the needed tags<br>
+I decided on the most easy to implemnt method, a simple line based parsing where each line will be:<br>
+PARAM text content<br>
+where PARAM is<br>
+<ul>
+<li> p - a start paragraph definition
+</li>
+<li> h1 - a header-1 definition
+</li>
+<li> h2 - a header-2 definition
+</li>
+<li> h3 - a header-3 definition
+</li>
+<li> ul - an unordered list definition
+</li>
+<li> li - a list item
+</li>
+</ul>
+</p>
+<p>
+<h3> design restrictions</h3>
+the script should be able to support multi-line paragraphs<br>
+the writing should remain as natural as possible<br>
+</p>
+<p>
+<h3> the script</h3>
+the script is based on <b>read</b> and a simple string <b>case</b><br>
+</p>
+<p>
+<h3> GitHub link</h3>
+the link should be here<br>
+</p>
+<p>
+<h3> the code explained</h3>
+</p>
+<h1> this an h1 header</h1>
+<h2> this is an h2 header</h2>
+<p> this test for paragraph<br>
+should support mutline<br>
+<h2> and sub headers</h2>
+</p>
+<p> this should be a second paragraph<br>
+<h2> with a sub header</h2>
+and text<br>
+<h2> a sub message</h2>
+and text<br>
+</p>
+<p>
+<ul>
+<li> a list item
+</li>
+<li> another list item
+</li>
+<li> and a third
+</li>
+</ul>
+</p>

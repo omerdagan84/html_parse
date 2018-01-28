@@ -1,3 +1,46 @@
+h1 simple HTML editing script
+h2 Intro
+p
+well, since I started woking on this page, I noticed that writing HTML tags pisses me off
+It's annoying. Since I don't like to be annoyed I figured I will write a small script to ease writing HTML code.
+
+p
+obviouslly, I am not going to write a hugh program to actually handle the entire language restrictions. there are enough IDE to handle writing and managing HTML code.
+No, I just want to be able to write the textual parts of the page easily, so I don't need to hang on writing all the tags when writing.
+
+h2 the script
+p
+h3 definitions
+As a starting point i decided to support easy writing of just a few textual tags
+i.e. p, h1, h2, h3, ul and li.
+The idea is being able to write naturally as possible and letting the script parse the text file and create the needed tags
+I decided on the most easy to implemnt method, a simple line based parsing where each line will be:
+PARAM text content
+where PARAM is
+ul
+li p - a start paragraph definition
+li h1 - a header-1 definition
+li h2 - a header-2 definition
+li h3 - a header-3 definition
+li ul - an unordered list definition
+li li - a list item
+
+p
+h3 design restrictions
+the script should be able to support multi-line paragraphs
+the writing should remain as natural as possible
+
+p
+h3 the script
+the script is based on <b>read</b> and a simple string <b>case</b>
+
+p
+h3 GitHub link
+the link should be here
+
+p
+h3 the code explained
+
 h1 this an h1 header
 h2 this is an h2 header
 p this test for paragraph
