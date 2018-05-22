@@ -1,0 +1,24 @@
+h2 Intro
+p Somtimes there is a need to sync execution of two standalone applications
+there are quite a few solutions on how this can be done.
+but a very simple solution is using the Linux signaling system, there
+are quite a few limitations of using this solution, but considering a very simple situation where one application just wants to announce it's state to the other.
+i.e. application state can be converted it to a simple int value, the following example can become a very simple method on doing this
+
+h2 Signaling background
+h3 Linux signals
+
+h3 the 'union sigval'
+STRUCT CODE
+
+h2 Signal use example
+p
+ul
+li registering signals
+li creating handlers for the signals
+li creating two apps to use these signals
+
+p
+h3 signal registration
+STRUCT
+
